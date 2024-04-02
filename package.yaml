@@ -34,26 +34,4 @@ ghc-options:
 - -Wredundant-constraints
 
 library:
-  source-dirs: src
-
-executables:
-  haskell-programming-from-new-principles-exe:
-    main:                Main.hs
-    source-dirs:         app
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - haskell-programming-from-new-principles
-
-tests:
-  haskell-programming-from-new-principles-test:
-    main:                Spec.hs
-    source-dirs:         test
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - haskell-programming-from-new-principles
+  source-dirs: chapter_02
