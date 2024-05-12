@@ -21,6 +21,7 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- QuickCheck
 
 ghc-options:
 - -Wall
@@ -35,12 +36,4 @@ ghc-options:
 
 library:
   source-dirs:
-    - chapter_02
-    - chapter_03
-    - chapter_04
-    - chapter_05
-    - chapter_06
-    - chapter_07
-    - chapter_08
-    - chapter_09
     - lib

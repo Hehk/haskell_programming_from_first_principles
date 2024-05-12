@@ -24,23 +24,14 @@ source-repository head
   location: https://github.com/githubuser/haskell-programming-from-new-principles
 
 library
-  exposed-modules:
-      Print1
   other-modules:
       Paths_haskell_programming_from_new_principles
   autogen-modules:
       Paths_haskell_programming_from_new_principles
   hs-source-dirs:
-      chapter_02
-      chapter_03
-      chapter_04
-      chapter_05
-      chapter_06
-      chapter_07
-      chapter_08
-      chapter_09
       lib
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
-      base >=4.7 && <5
+      QuickCheck
+    , base >=4.7 && <5
   default-language: Haskell2010
