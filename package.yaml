@@ -22,6 +22,15 @@ description:         Please see the README on GitHub at <https://github.com/gith
 dependencies:
 - base >= 4.7 && < 5
 - QuickCheck
+- bytestring
+- hedis
+- mtl
+- network-uri
+- random
+- scotty
+- text
+- transformers
+
 
 ghc-options:
 - -Wall
@@ -37,3 +46,25 @@ ghc-options:
 library:
   source-dirs:
     - lib
+
+executables:
+  shawty-exe:
+    main:                Main.hs
+    source-dirs:         shawty
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - base >= 4.7 && < 5
+    - QuickCheck
+    - bytestring
+    - hedis
+    - mtl
+    - network-uri
+    - random
+    - scotty
+    - text
+    - transformers
+
+

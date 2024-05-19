@@ -34,4 +34,34 @@ library
   build-depends:
       QuickCheck
     , base >=4.7 && <5
+    , bytestring
+    , hedis
+    , mtl
+    , network-uri
+    , random
+    , scotty
+    , text
+    , transformers
+  default-language: Haskell2010
+
+executable shawty-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_haskell_programming_from_new_principles
+  autogen-modules:
+      Paths_haskell_programming_from_new_principles
+  hs-source-dirs:
+      shawty
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base >=4.7 && <5
+    , bytestring
+    , hedis
+    , mtl
+    , network-uri
+    , random
+    , scotty
+    , text
+    , transformers
   default-language: Haskell2010
