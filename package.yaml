@@ -30,6 +30,7 @@ dependencies:
 - scotty
 - text
 - transformers
+- trifecta
 
 
 ghc-options:
